@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #001e4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.app {
+    background: #fff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.app h1 {
+    font-size: 26px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.quiz {
+    padding: 10px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 12px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#nextbtn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 170px;
+    border: 0;
+    padding: 12px;
+    margin: 20px auto 0;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+}
+
+/* Correct / Incorrect colors */
+.correct {
+    background: #9aeabc !important;
+    color: black;
+}
+
+.incorrect {
+    background: #ff9393 !important;
+    color: black;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .app {
+        padding: 20px;
+    }
+    .app h1 {
+        font-size: 22px;
+    }
+    .btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .app {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .app h1 {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .quiz h2 {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+    #nextbtn {
+        width: 100%;
+        font-size: 15px;
+        padding: 12px;
+    }
+}
