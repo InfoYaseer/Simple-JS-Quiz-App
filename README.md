@@ -1,3 +1,3 @@
 ## 📸 Demo
-- Live Site: https://yaseerm.me/javascript-projects/js-quiz%20web%20app/
+- Live Site: https://infoyaseer.github.io/Simple-JS-Quiz-App/
 - Source Code: This repository
